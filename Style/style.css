@@ -1,0 +1,229 @@
+
+body {
+    margin: 0;
+    background-image: url("../Imagenes/natsu.gif");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+#indice {
+    margin: 0 auto;
+    display: flex; /* Usar flexbox */
+    align-items: center; /* Alinear verticalmente */
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0px 0px 30px 30px;
+    height: 65px;
+    padding: 0 10px; /* Espaciado interno */
+    max-width: 700px;
+}
+#indicee {
+    margin: auto; /* Centrar el contenedor de enlaces */
+    display: flex; /* Usar flexbox para alinear los enlaces */
+    justify-content: space-around; /* Espacio uniforme entre enlaces */
+    flex-grow: 0.3; /* Permitir que los enlaces usen el espacio disponible */
+    color: aliceblue;
+    text-align: center;
+}
+
+#icono {
+    margin-left: 25px;
+    width: 55px; /* Tamaño fijo para el icono */
+    height: 55px; /* Tamaño fijo para el icono */
+    margin-right: -70px; /* Espacio entre el icono y los enlaces */
+}
+.caja {
+    margin: 50px auto;
+    width: 85%;
+    max-width: 1000px;
+    min-width: 300px; 
+    background-color: #000000;
+    opacity: 0.6;
+    border-radius: 30px;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
+.caja_animes {
+    margin: 50px auto;
+    width: 85%;
+    max-width: 1150px;
+    min-width: 300px; 
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    
+}
+.lista_caja {
+    display: flex;
+}
+.lista {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 50px;
+    width: 25%;
+    max-width: 250px; 
+    min-width: 100px; 
+    background-color: #000000;
+    opacity: 0.6;
+    border-radius: 0 30px 30px 0;
+    color: aliceblue;
+    padding: 20px;
+    max-height: 780px; /* Establece una altura máxima */
+}
+.animes {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan a la siguiente línea */
+    justify-content: center;
+}
+.lista h3 {
+    text-align: center;
+}
+.lista ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+}
+.lista li {
+    margin-top: 15px;
+}
+.lista a {
+    text-decoration: none;
+}
+.lista_caja .caja_animes {
+    margin: 50px;
+
+}
+#redes {
+    margin: 50px auto;
+    width: 20%;
+    max-width: 200px;
+    background-color: #000000;
+    opacity: 0.6;
+    border-radius: 20px;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px; /* Espaciado interno */
+}
+p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+a {
+    color: aliceblue;
+}
+.anime_titulo {
+    margin: 2px;
+    padding: 5px;
+}
+.anime__item {
+    margin: 10px;
+    width: 115px;
+    border-radius: 10px;
+    overflow: hidden; /* Sin esto no funcion el border radius */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.anime__item__pic {
+    width: 100%;
+    height: 160px; /* Altura ajustada para hacer la imagen más alargada */
+    background-size: cover; 
+    background-position: center;
+}
+.slider {
+    margin: auto;
+    max-width: 720px;
+    margin-bottom: 43px;
+    width: 95%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bar {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    transform: rotate(45deg);
+    margin: 0 5px;
+    box-shadow: 0 -3px 4px rgba(4, 0, 0, 0.8);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* Controlar el color de cada barra individualmente */
+#slide1:checked ~ .navigation label[for="slide1"] {
+    background-color: rgb(255, 102, 0); /* Color cuando slide1 está activo */
+}
+#slide2:checked ~ .navigation label[for="slide2"] {
+    background-color: rgb(255, 102, 0); /* Color cuando slide2 está activo */
+}
+#slide3:checked ~ .navigation label[for="slide3"] {
+    background-color: rgb(255, 102, 0); /* Color cuando slide3 está activo */
+}
+#slide4:checked ~ .navigation label[for="slide4"] {
+    background-color: rgb(255, 102, 0); /* Color cuando slide4 está activo */
+}
+#slide5:checked ~ .navigation label[for="slide5"] {
+    background-color: rgb(255, 102, 0); /* Color cuando slide5 está activo */
+}
+#slide6:checked ~ .navigation label[for="slide6"] {
+    background-color: rgb(255, 102, 0); /* Color cuando slide6 está activo */
+}
+#slide7:checked ~ .navigation label[for="slide7"] {
+    background-color: rgb(255, 102, 0); /* Color cuando slide7 está activo */
+}
+#slide8:checked ~ .navigation label[for="slide8"] {
+    background-color: rgb(255, 102, 0); /* Color cuando slide8 está activo */
+}
+
+.title_slide {
+    position: absolute;
+    margin-left: 20px;
+    color: rgb(255, 136, 0);
+    text-shadow: 
+        1px 1px 2px rgb(0, 0, 0); 
+    display: inline; /* Cambiar a inline para evitar que se rompa en varias líneas */
+    white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
+}
+
+/* Controlar la visibilidad de las imágenes */
+#slide1:checked ~ .slides { transform: translateX(0); }
+#slide2:checked ~ .slides { transform: translateX(-100%); }
+#slide3:checked ~ .slides { transform: translateX(-200%); }
+#slide4:checked ~ .slides { transform: translateX(-300%); }
+#slide5:checked ~ .slides { transform: translateX(-400%); }
+#slide6:checked ~ .slides { transform: translateX(-500%); }
+#slide7:checked ~ .slides { transform: translateX(-600%); }
+#slide8:checked ~ .slides { transform: translateX(-700%); }
